@@ -43,19 +43,19 @@ class App1:
         
         #____________ Entry Food ___________________
         
-        self.entry1 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
+        self.entry1 = tk.Entry(master=top, textvariable=rand, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
         self.entry1.place(relx=0.20, rely=0.26)
-        self.entry1 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
+        self.entry1 = tk.Entry(master=top, textvariable=friedchimken, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
         self.entry1.place(relx=0.20, rely=0.34)
-        self.entry1 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
+        self.entry1 = tk.Entry(master=top, textvariable=chimkenburgmer, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
         self.entry1.place(relx=0.20, rely=0.42)
-        self.entry1 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
+        self.entry1 = tk.Entry(master=top, textvariable=bigkimgburgmer, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
         self.entry1.place(relx=0.20, rely=0.50)
-        self.entry1 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
+        self.entry1 = tk.Entry(master=top, textvariable=chimkentamdoori, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
         self.entry1.place(relx=0.20, rely=0.58)
-        self.entry1 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
+        self.entry1 = tk.Entry(master=top, textvariable=vegsalaadm, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
         self.entry1.place(relx=0.20, rely=0.66)
-        self.entry1 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
+        self.entry1 = tk.Entry(master=top, textvariable=drimks, background="#d9d9d9", foreground="#c60000",  selectbackground="#f2a343", font=font13)
         self.entry1.place(relx=0.20, rely=0.73)
 
         #_______________ Calc ________________
@@ -104,7 +104,7 @@ class App1:
         self.Label12 = tk.Label(master=top, text='Comst :', foreground="#f2a343", font=font12, background="#091833")
         self.Label12.place(relx=0.40, rely=0.32)
         self.Label12 = tk.Label(master=top, text='Service Charmge :', foreground="#bac8bd", font=font12, background="#091833")
-        self.Label12.place(relx=0.35, rely=0.4)
+        self.Label12.place(relx=0.37, rely=0.4)
         self.Label12 = tk.Label(master=top, text='Tamx :', foreground="#bac8bd", font=font12, background="#091833")
         self.Label12.place(relx=0.40, rely=0.48)
         self.Label12 = tk.Label(master=top, text='Subtmtal :', foreground="#bac8bd", font=font12, background="#091833")
@@ -113,18 +113,99 @@ class App1:
         self.Label12.place(relx=0.40, rely=0.64)
 
         #________ Entry Cost ____________
-        self.entry13 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
-        self.entry13.place(relx=0.467, rely= 0.33)
-        self.entry13 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
-        self.entry13.place(relx=0.516, rely= 0.41)
-        self.entry13 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
-        self.entry13.place(relx=0.467, rely= 0.5)
-        self.entry13 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
-        self.entry13.place(relx=0.479, rely= 0.57)
-        self.entry13 = tk.Entry(master=top, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
-        self.entry13.place(relx=0.466, rely= 0.65)
+        
+        self.entry13 = tk.Entry(master=top, textvariable=comst, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
+        self.entry13.place(relx=0.477, rely= 0.33)
+        self.entry13 = tk.Entry(master=top, textvariable=servicecharmge, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
+        self.entry13.place(relx=0.548, rely= 0.41, relwidth=0.087)
+        self.entry13 = tk.Entry(master=top, textvariable=tamx, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
+        self.entry13.place(relx=0.471, rely= 0.5, relwidth=0.164)
+        self.entry13 = tk.Entry(master=top, textvariable=subtmtal, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
+        self.entry13.place(relx=0.479, rely= 0.57, relwidth=0.1575)
+        self.entry13 = tk.Entry(master=top, textvariable=totmal, background="#d9d9d9", foreground="#c60000", selectbackground="#f2a343", font=font13)
+        self.entry13.place(relx=0.481, rely= 0.65, relwidth=0.155)
+
+        #_______ Control Button __________
+
+        self.Button2 = tk.Button(master=top, text='PRICE', background='#e16740', font=font16, command=list1)
+        self.Button2.place(relx=0.039, rely=0.86, height=34, width=107)
+        self.Button2 = tk.Button(master=top, text='TOTAL', background='#e16740', font=font16)
+        self.Button2.place(relx=0.156, rely=0.86, height=34, width=107)
+        self.Button2 = tk.Button(master=top, text='RESET', background='#e16740', font=font16)
+        self.Button2.place(relx=0.272, rely=0.86, height=34, width=107)
+        self.Button2 = tk.Button(master=top, text='EXIT', background='#e16740', font=font16)
+        self.Button2.place(relx=0.389, rely=0.86, height=34, width=107)
+        
+def list1():
+    price = tk.Tk()
+    price.geometry("300x250+350+200")
+    price.title("Price List")
+    price.configure(background="#091833")
+
+    labelInfo = Label(price, text="ITEM", foreground="#bac8bd", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=0, column=0)
+    labelInfo = Label(price, text="PRICE", foreground="#f2a343", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=0, column=3)
+    labelInfo = Label(price, text="Fried Chimken", foreground="#bac8bd", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=1, column=0)
+    labelInfo = Label(price, text="120", foreground="#f2a343", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=1, column=3)
+    labelInfo = Label(price, text="Big Kimg Burgmer", foreground="#bac8bd", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=2, column=0)
+    labelInfo = Label(price, text="499", foreground="#f2a343", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=2, column=3)
+    labelInfo = Label(price, text="Chimken Tamdoori", foreground="#bac8bd", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=3, column=0)
+    labelInfo = Label(price, text="350", foreground="#f2a343", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=3, column=3)
+    labelInfo = Label(price, text="Veg Salaadm", foreground="#bac8bd", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=4, column=0)
+    labelInfo = Label(price, text="220", foreground="#f2a343", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=4, column=3)
+    labelInfo = Label(price, text="Drimks", foreground="#bac8bd", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=5, column=0)
+    labelInfo = Label(price, text="33", foreground="#f2a343", font="Al-Aramco 12 bold", background="#091833")
+    labelInfo.grid(row=5, column=3)
+    
+
+
 
 
 root = tk.Tk()
+
+text_input = StringVar()
+operator = ""
+
+def btnclick(numbers):
+    global operator
+    operator = operator + str(numbers)
+
+def btnclr():
+    global operator
+    operator = ""
+    text_input.set("")
+
+def equals():
+    global operator
+    summ = str(eval(operator))
+    text_input.set(summ)
+    operator = ""
+
+rand = StringVar()
+friedchimken = StringVar()
+friedchimken = StringVar()
+chimkenbugmer = StringVar()
+bigkimgburgmer = StringVar()
+chimkentamdoori = StringVar()
+vegsalaadm = StringVar()
+drimks = StringVar()
+
+comst = StringVar()
+servicecharmge = StringVar()
+tamx = StringVar()
+subtmtal = StringVar()
+totmal = StringVar()
+
 my_gui = App1(root)
 root.mainloop()
+
